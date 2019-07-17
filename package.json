@@ -1,0 +1,34 @@
+{
+  "name": "website-base-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "dotenv": "^8.0.0",
+    "gulp": "^4.0.2",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-imagemin": "^6.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-schema": "node docs/scripts/init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlos16ny/website-base-admin.git"
+  },
+  "keywords": [
+    "visaojr"
+  ],
+  "author": "carlos16ny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlos16ny/website-base-admin/issues"
+  },
+  "homepage": "https://github.com/carlos16ny/website-base-admin#readme"
+}
