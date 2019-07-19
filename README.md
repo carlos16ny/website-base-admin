@@ -57,13 +57,28 @@ Agora que a instalação está pronta, vamos ver um pouco do que eu possuo:
   * Página de Edição de Usuário
   * Menu Principal
   * Página de Cadastro (As vezes você vai tirar essa parte de mim)
+  * Reset de Senhas
+  * Troca de Favicon
   * Não Precisa se preoculpar com a segurança, se seguir tudo direitinho, vai dar bom!
 > Tenho alguns modelos também que você vai amar :smirk:
 >
->[___admin/modelos_pagina/___](admin/modelos_pagina/)
+>[___admin/pages/___](admin/pages/)
 >
 > Se achou que acabou, temos mais :scream: :
   * Algumas "baterias" estão incluidas, tudo para que a codificação seja a mais simpels possível:
     * Módulo de Upload de Imagem
+    * Módudo de Upload de Arquivos
     * Módulo de Cortar Imagem
-    * 
+    * Módulo Envio de Emails
+
+### **Bibliotecas JavaScript já carregadas :**
+1. [Chart.js](https://www.chartjs.org) | [Exemplo](admin/pages/chart.md)
+2. [FullCalendar](http://fullcalendar.io/) | [Exemplo](admin/pages/callendar.md)
+3. [Select2.js](https://select2.org) | [Exemplo](admin/pages/inputs.md)
+4. [TimePicker](https://jdewit.github.io/bootstrap-timepicker/) | [Exemplo](admin/pages/inputs.md)
+5. [DatePicker](https://bootstrap-datepicker.readthedocs.io/en/latest/) | [Exemplo](admin/pages/inputs.md)
+6. [DateRangePicker](http://www.daterangepicker.com) | [Exemplo](admin/pages/inputs.md)
+7. [ColorPicker](https://github.com/farbelous/bootstrap-colorpicker) | [Exemplo](admin/pages/inputs.md)
+8.  [iCheck](http://icheck.fronteed.com) | [Exemplo](admin/pages/inputs.md)
+9.  [CKEditor](https://ckeditor.com) | [Exemplo](admins/pages/ckeditor.md)
+10. [CKFinder](https://ckeditor.com/ckfinder/) | [Exemplo](admin/pages/ckfinder.md)
