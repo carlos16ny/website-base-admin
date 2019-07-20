@@ -34,7 +34,7 @@ include_once 'footer.php';
 <script src="../<?=(Links::js_CKEditor)?>"></script>
 ```
 
-4. Dentro de sua ```<div class="row">``` ou onde desejar incluir o Editor, inclua uma ```<textarea></textarea>```. A confiração da sua textarea fica a seu critério com relação a tamanho e se existe algum placeholder para ser incluido dentro da _tag_.
+4. Dentro de sua ```<div class="row">``` ou onde desejar incluir o Editor, inclua uma ```<textarea></textarea>```. A configuração da sua textarea fica a seu critério com relação a tamanho e se existe algum placeholder para ser incluido dentro da _tag_.
    1. A substituicao do ```<textarea></textarea>``` se dá por id, dessa forma é de extrema importancia sua inclusão.
 
 Exemplo:
@@ -49,7 +49,7 @@ Exemplo:
 
 5. Agora vamos iniciar o script em _js_ para de fato substituir o ```<textarea></textarea>``` 
 
-** a _tag_ de  ```<script></script>```deve ser incluida após a importação do arquivo _java script_, demonstrado na instrução **3**
+* a _tag_ de  ```<script></script>```deve ser incluida após a importação do arquivo _java script_, demonstrado na instrução **3**
 
 ```js
 $(function (){

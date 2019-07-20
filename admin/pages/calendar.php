@@ -31,6 +31,7 @@ include_once 'footer.php';
       y = date.getFullYear()
 
     $('#calendar').fullCalendar({
+      locale: 'pt-br',
       header: {
         left: 'prev,next today',
         center: 'title',

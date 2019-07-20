@@ -5,6 +5,9 @@
 > 1. Possuir o Node.js instalado. [Link](https://nodejs.org/pt-br/) para instalação
 > 
 > 2. Instalação do Yarn - Outro gerenciador de pacote do Node (recomendado) | [Link](https://yarnpkg.com/lang/pt-br/docs/install/#windows-stable)
+>
+> 4. Estar com o SGBD ligado [MySql versão >= 5.6]
+
 
 Na pasta raiz do projeto, execute: 
 
@@ -12,8 +15,13 @@ Na pasta raiz do projeto, execute:
 ```js 
     npm install
 ```
+ou
+```js 
+    yarn i
+```
+
 ### __Configuração__
-1. #### Renomeie o arquivo .env-exemple para .env
+1. #### Renomeie o arquivo .env.example para .env
 2. #### Altere os dados para seu ambiente de desenvolvimento, exemplo:
    ```env
     # Default Connetion DB
