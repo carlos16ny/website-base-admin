@@ -48,9 +48,9 @@
         bodyTag: "fieldset",
         transitionEffect: "fade",
         labels: {
-            previous : 'Previous',
-            next : 'Next',
-            finish : 'Finish',
+            previous : 'Ant.',
+            next : 'Prox.',
+            finish : 'Finalizar',
             current : ''
         },
         titleTemplate : '<h3 class="title">#title#</h3>',
@@ -72,7 +72,7 @@
         },
         onFinished: function (event, currentIndex)
         {
-            alert('Sumited');
+            form.submit();
         },
         onStepChanged: function (event, currentIndex, priorIndex)
         {
@@ -81,65 +81,8 @@
         }
     });
 
-    jQuery.extend(jQuery.validator.messages, {
-        required: "",
-        remote: "",
-        email: "",
-        url: "",
-        date: "",
-        dateISO: "",
-        number: "",
-        digits: "",
-        creditcard: "",
-        equalTo: ""
-    });
+}(jQuery));
 
-    // $('#country').parent().append('<ul id="newcountry" class="select-list" name="country"></ul>');
-    // $('#country option').each(function(){
-    //     $('#newcountry').append('<li value="' + $(this).val() + '">'+$(this).text()+'</li>');
-    // });
-    // $('#country').remove();
-    // $('#newcountry').attr('id', 'country');
-    // $('#country li').first().addClass('init');
-    // $("#country").on("click", ".init", function() {
-    //     $(this).closest("#country").children('li:not(.init)').toggle();
-    // });
-    
-    // var allOptions = $("#country").children('li:not(.init)');
-    // $("#country").on("click", "li:not(.init)", function() {
-    //     allOptions.removeClass('selected');
-    //     $(this).addClass('selected');
-    //     $("#country").children('.init').html($(this).html());
-    //     allOptions.toggle();
-    // });
-
-    // var inputs = document.querySelectorAll( '.inputfile' );
-	// Array.prototype.forEach.call( inputs, function( input )
-	// {
-	// 	var label	 = input.nextElementSibling,
-	// 		labelVal = label.innerHTML;
-
-	// 	input.addEventListener( 'change', function( e )
-	// 	{
-	// 		var fileName = '';
-	// 		if( this.files && this.files.length > 1 )
-	// 			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-	// 		else
-	// 			fileName = e.target.value.split( '\\' ).pop();
-
-	// 		if( fileName )
-	// 			label.querySelector( 'span' ).innerHTML = fileName;
-	// 		else
-	// 			label.innerHTML = labelVal;
-	// 	});
-
-	// 	// Firefox bug fix
-	// 	input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
-	// 	input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
-    // });
-    
-    
-})(jQuery);
 function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();

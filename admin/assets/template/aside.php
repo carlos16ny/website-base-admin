@@ -1,9 +1,4 @@
 <?php
-$rename = function($name){
-    return explode('Controller.php', $name)[0];
-};
-$controller = array_diff(scandir('./assets/php/controller/'), array('..', '.', 'loginController.php', 'userController.php'));
-$names = array_map($rename, $controller);
 
 $labels = array(
     "Links" => array(

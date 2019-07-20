@@ -1,7 +1,9 @@
 /* @extend display-flex; */
 display-flex, .select-icon, .select-icon i, .form-radio input + label figure, .form-flex, .steps ul, .actions ul li a, .form-row {
   display: flex;
-  display: -webkit-flex; }
+  display: -webkit-flex; 
+  flex: 50%;
+}
 
 /* @extend list-type-ulli; */
 list-type-ulli, .steps ul, .actions ul {
@@ -189,7 +191,7 @@ body {
   font-weight: 400;
   font-family: 'Poppins';
   margin: 0px;
-  background: #8be7ac; }
+  background: #d3d3d3; }
 
 .main {
   padding: 160px 0; }
