@@ -26,6 +26,16 @@ ou
 > Até aqui temos seu banco de dados configurado e os pacotes node instalados
 2. #### Em seu navegador, execute o _admin/config/setup.php_, exemplo:
     * _localhost:3000/admin/config/setup.php_
+### ! Nota Importante
+
+> Caso o projeto já tenha sido configurado, apenas o arquivo config.ini deve ser alterado com as seguintes informações
+```ini
+HOST_DB={{ seu host }} #localhost
+PASS_DB={{ senha bd }}
+USER_DB={{ user  bd }}
+PORT_DB={{ porta bd }}
+```
+
 
 ### __Banco de dados__
 
@@ -39,7 +49,23 @@ ou
 > 
 > ![Modelo Banco de Dados](assets/uploads/modelo-bd.png)
 >   
-> * ##### O modelo é suficiente para a maioria dos sites que são feitos pela Visão
+> * ##### O modelo é suficiente para a maioria dos sites que são feitos pela Visão, mas pode gerar muitas células NULL.
+
+### **! Nota Importante :**
+> * Caso queira utilizar um modelo próprio, para manutenção das funções de Login, deve existir uma tabela ___users___ modelada pelo menos com os mesmos atributos do modelo acima
+>
+> * Para facilitar o desenvolvimento, inclua o script de inserção abaixo caso não utilize o modelo.
+```sql
+INSERT INTO `users`(`email`, `password`, `name`) VALUES ('admin@visaojr.com.br', '8d58defd03e08831be110619ca62fbdb2851219d', 'Visão Admin');
+```
+
+> Conforme o manual de projetos o padrão para desenvolvimento é
+> 
+> Email : admin@visaojr.com.br
+> 
+> Senha : Vis@o123
+
+
 
 Para a inicializacao do banco de dados vamos utilizar o npm.
 
@@ -58,8 +84,7 @@ Agora que a instalação está pronta, vamos ver um pouco do que eu possuo:
   * Página de Login
   * Página de Edição de Usuário
   * Menu Principal
-  * Página de Cadastro (As vezes você vai tirar essa parte de mim)
-  * Reset de Senhas
+  * Reset de Senhas [Com envio de email]
   * Troca de Favicon
   * Não Precisa se preoculpar com a segurança, se seguir tudo direitinho, vai dar bom!
 > Tenho alguns modelos também que você vai amar :smirk:
@@ -68,10 +93,13 @@ Agora que a instalação está pronta, vamos ver um pouco do que eu possuo:
 >
 > Se achou que acabou, temos mais :scream: :
   * Algumas "baterias" estão incluidas, tudo para que a codificação seja a mais simpels possível:
+  
     * Módulo de Upload de Imagem
+    * Módulo de redimencionamento de Imagem
     * Módudo de Upload de Arquivos
     * Módulo de Cortar Imagem
     * Módulo Envio de Emails
+    * Módulo de Escrita de Emails
 
 ### **Bibliotecas JavaScript já carregadas :**
 1. [Chart.js](https://www.chartjs.org) | [Exemplo](admin/pages/chart.md)

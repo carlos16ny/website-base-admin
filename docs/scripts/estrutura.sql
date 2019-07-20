@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `modelo`.`users` (
   UNIQUE INDEX `login_UNIQUE` (`email` ASC))
 ENGINE = InnoDB;
 
-
+INSERT INTO `users`(`email`, `password`, `name`) VALUES ('admin@visaojr.com.br', '8d58defd03e08831be110619ca62fbdb2851219d', 'Visão Admin');
 -- -----------------------------------------------------
 -- Table `modelo`.`content`
 -- -----------------------------------------------------

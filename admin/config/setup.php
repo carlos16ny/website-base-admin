@@ -6,7 +6,7 @@ if (isset($_POST['config'])) {
     $imagem = array(
         'arquivo' => $_FILES['photo'],
         'nome' => 'logo',
-        'destino' => '../assets/img/',
+        'destino' => '../assets/img/logo/',
         'extensoes' => array('jpg', 'png', 'jpeg', 'gif')
     );
 
@@ -18,8 +18,7 @@ if (isset($_POST['config'])) {
             "NAME_DB" => $_POST['proj_banco'],
             "PASS_DB" => $_POST['proj_pass'],
             "USER_DB" => $_POST['proj_user'],
-            
-            #Project
+            "PORT_DB" => $_POST['proj_porta'],
             "PROJECT_NAME" => $_POST['proj_name'],
             "PROJECT_FOTO" => explode('../', $save)[1],
         );
@@ -125,32 +124,6 @@ function safefilerewrite($fileName, $dataToSave){
                         <input type="text" name="proj_banco" placeholder="Nome Banco" />
                     </div>
                 </fieldset>
-                <!-- <h3>
-                    Address
-                </h3>
-                <fieldset>
-                    <div class="form-row form-input-flex">
-                        <div class="form-input">
-                            <input type="text" name="street_name" id="street_name" placeholder="Street Name" />
-                        </div>
-                        <div class="form-input">
-                            <input type="text" name="street_number" id="street_number" placeholder="Street Number" />
-                        </div>
-                    </div>
-                    <div class="form-row form-input-flex">
-                        <div class="form-input">
-                            <input type="text" name="city" id="city" placeholder="City" />
-                        </div>
-                        <div class="form-input">
-                            <select name="country" id="country">
-                                <option value="">Country</option>
-                                <option value="Viet Nam">Viet Nam</option>
-                                <option value="USA">USA</option>
-                            </select>
-                            <span class="select-icon"><i class="zmdi zmdi-caret-down"></i></span>
-                        </div>
-                    </div>
-                </fieldset> -->
                 <input type="hidden" name="config">
             </form>
         </div>

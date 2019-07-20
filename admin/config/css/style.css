@@ -2,7 +2,6 @@
 display-flex, .select-icon, .select-icon i, .form-radio input + label figure, .form-flex, .steps ul, .actions ul li a, .form-row {
   display: flex;
   display: -webkit-flex; 
-  flex: 50%;
 }
 
 /* @extend list-type-ulli; */
@@ -191,7 +190,9 @@ body {
   font-weight: 400;
   font-family: 'Poppins';
   margin: 0px;
-  background: #d3d3d3; }
+  background: #d3d3d3; 
+  max-height: 100vh;
+}
 
 .main {
   padding: 160px 0; }
@@ -375,7 +376,7 @@ fieldset.current {
   -o-justify-content: space-between;
   -ms-justify-content: space-between; }
   .steps ul li {
-    width: 330px; }
+    width: 500px; }
     .steps ul li a {
       text-decoration: none;
       display: block;

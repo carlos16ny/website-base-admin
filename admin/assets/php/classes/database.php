@@ -30,10 +30,4 @@ class Database{
 
 }
 
-
-$bd = new Database();
-$conn = $bd->connection();
-$stmt = $conn->prepare('SELECT * FROM filme');
-$stmt->execute();
-var_dump($stmt->fetchAll(PDO::FETCH_OBJ));
 ?>

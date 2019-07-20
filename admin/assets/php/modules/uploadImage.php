@@ -34,6 +34,10 @@ class UploadImage{
         if (in_array($extensao, $this->permite))
             return true;    
     }
+
+    public function existePasta($destino){
+        return file_exists($destino);
+    }
     
     public function salvar(){         
 
@@ -49,6 +53,11 @@ class UploadImage{
             }
             //localizacao do arquivo 
             $destino = $this->pasta . $novo_nome;
+
+            // ! caso não exista a pasta de destino
+            if(!$this->existePasta($this->pasta)){
+                mkdir($this->pasta, 0755);
+            }
 
             //move o arquivo
             if (! move_uploaded_file($this->arquivo['tmp_name'], $destino)){
