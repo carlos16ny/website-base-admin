@@ -42,6 +42,24 @@
             <section class="sidebar">
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="">
+                        <a href="components.php">
+                            <i class="fa fa-circle-o"></i>
+                            Componentes
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="modals.php">
+                            <i class="fa fa-circle-o"></i>
+                            Modais
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="tables.php">
+                            <i class="fa fa-circle-o"></i>
+                            Tabelas
+                        </a>
+                    </li>
+                    <li class="">
                         <a href="chartjs.php">
                             <i class="fa fa-circle-o"></i>
                             Chart JS
@@ -70,8 +88,25 @@
                             <li><a href="forms.php#icheck"><i class="fa fa-circle-o"></i> iCheck</a></li>
                         </ul>
                     </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-edit"></i>
+                            <span>Elementos</span>
+                            <span class="pull-right-container">
+                            <span class="label label-primary pull-right">7</span>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="forms.php#select2"><i class="fa fa-circle-o"></i> Select2</a></li>
+                            <li><a href="forms.php#timepicker"><i class="fa fa-circle-o"></i> TimePicker</a></li>
+                            <li><a href="forms.php#datepicker"><i class="fa fa-circle-o"></i> DatePicker</a></li>
+                            <li><a href="forms.php#daterangepicker"><i class="fa fa-circle-o"></i> DateRangerPicker</a></li>
+                            <li><a href="forms.php#colorpicker"><i class="fa fa-circle-o"></i> ColorPicker</a></li>
+                            <li><a href="forms.php#icheck"><i class="fa fa-circle-o"></i> iCheck</a></li>
+                        </ul>
+                    </li>
                     <li class="">
-                        <a href="chartjs.php">
+                        <a href="ckeditor.php">
                             <i class="fa fa-circle-o"></i>
                             CK Editor
                         </a>

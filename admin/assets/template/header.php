@@ -71,19 +71,25 @@
                     ?>
                     <li>
                         <a href="<?=$l['link']?>">
-                            <?=$l['icon']?></i> <span><?=$l['name']?></span>
+                            <?=$l['icon']?></i> <?=$l['name']?>
                         </a>
                     </li>
                     <?php } else { ?> 
                     <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-files-o"></i>
-                            <span>Layout Options</span>
+                        <a href="">
+                            <?=$l['icon']?> <?=$l['name']?>
                         </a>
                         <ul class="treeview-menu">
+                        <?php foreach($l['subs'] as $sub) { ?>
+                            <li>
+                                <a href="<?=$sub['link']?>">
+                                    <?=$sub['icon']?> <?=$sub['name']?>
+                                </a>
+                            </li>
+                        <?php } ?>
                         </ul>
                     </li>
-                    <?php }} ?>
+                    <?php }}?>
                 </ul>
             </section>
         </aside>

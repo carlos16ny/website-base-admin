@@ -87,6 +87,6 @@ Agora que a instalação está pronta, vamos ver um pouco do que eu possuo:
 5. [DatePicker](https://bootstrap-datepicker.readthedocs.io/en/latest/) | [Exemplo](admin/pages/inputs.md)
 6. [DateRangePicker](http://www.daterangepicker.com) | [Exemplo](admin/pages/inputs.md)
 7. [ColorPicker](https://github.com/farbelous/bootstrap-colorpicker) | [Exemplo](admin/pages/inputs.md)
-8. [iCheck](http://icheck.fronteed.com) | [Exemplo](admin/pages/inputs.md)
+8. [iCheck](http://icheck.fronteed.com) | [Exemplo](admin/pages/forms.md)
 9. [CKEditor](https://ckeditor.com) | [Exemplo](admin/pages/ckeditor.md)
 10. [CKFinder](https://ckeditor.com/ckfinder/) | [Exemplo](admin/pages/ckfinder.md)

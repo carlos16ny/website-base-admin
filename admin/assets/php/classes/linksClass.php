@@ -13,6 +13,7 @@ class Links {
     public const js_CKEditor       = 'components/ckeditor/ckeditor.js';
     public const js_CKFinder       = 'components/ckfinder/ckfinder.js';
     public const js_ColorPicker    = 'components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js';
+    public const js_Holder         = 'components/holderjs/holder.min.js';
     
     public const css_DatePicker    = 'components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css';
     public const css_DateRange     = 'components/bootstrap-daterangepicker/daterangepicker.css';
