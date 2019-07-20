@@ -21,17 +21,11 @@ ou
 ```
 
 ### __Configuração__
-1. #### Renomeie o arquivo .env.example para .env
-2. #### Altere os dados para seu ambiente de desenvolvimento, exemplo:
-   ```env
-    # Default Connetion DB
-
-    HOST_DB= {seu host}
-    NAME_DB= {o nome do banco do projeto}
-    PASS_DB= {senha do seu ambiente}
-    USER_DB= {seu usuário mysql}
-    ```
+1. #### Renomeie o arquivo .config.ini.example para .config.ini
+    * Arquivo localizado na pasta _admin/_
 > Até aqui temos seu banco de dados configurado e os pacotes node instalados
+2. #### Em seu navegador, execute o _admin/config/setup.php_, exemplo:
+    * _localhost:3000/admin/config/setup.php_
 
 ### __Banco de dados__
 

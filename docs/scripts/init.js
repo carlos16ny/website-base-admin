@@ -1,21 +1,18 @@
-var mysql      = require('execsql'),
-    dotenv     = require('dotenv');
-dotenv.config();
+var ini     = require('ini'),
+    fs      = require('fs');
+
+    var config = ini.parse(fs.readFileSync('./admin/config.ini', 'utf-8'))
+
 
 // var connection = {
-//   host     : process.env.HOST_DB,
-//   user     : process.env.USER_DB,
-//   password : process.env.PASS_DB
+//   host     : '127.0.0.1',
+//   user     : 'root',
+//   password : 1234
 // };
-var connection = {
-  host     : '127.0.0.1',
-  user     : 'root',
-  password : 1234
-};
-sqlFile = __dirname +  '/estrutura.sql';
+// sqlFile = __dirname +  '/estrutura.sql';
 
-mysql.config(connection)
-     .execFile(sqlFile, function(err, results){
-        if (err) throw err;
-		console.log(results);
-    }).end();
+// mysql.config(connection)
+//      .execFile(sqlFile, function(err, results){
+//         if (err) throw err;
+// 		console.log(results);
+//     }).end();

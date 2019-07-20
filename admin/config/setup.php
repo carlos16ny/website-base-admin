@@ -1,25 +1,42 @@
 <?php
 if (isset($_POST['config'])) {
-    $setConfig = array(
-        "HOST_DB" => $_POST['proj_host'],
-        "NAME_DB" => $_POST['proj_banco'],
-        "PASS_DB" => $_POST['proj_pass'],
-        "USER_DB" => $_POST['proj_user'],
-        
-        #Project
-        "PROJECT_NAME" => $_POST['proj_name'],
-        "PROJECT_FOTO" => 'oi',
+
+    require_once '../assets/php/modules/uploadImage.php';
+
+    $imagem = array(
+        'arquivo' => $_FILES['photo'],
+        'nome' => 'logo',
+        'destino' => '../assets/img/',
+        'extensoes' => array('jpg', 'png', 'jpeg', 'gif')
     );
-    $final = "";
-    foreach($setConfig as $key => $value){
-        $final .= $key .'='. $value .PHP_EOL;
+
+    $upload = new UploadImage($imagem);
+    $save = $upload->salvar();
+    if($save){
+        $setConfig = array(
+            "HOST_DB" => $_POST['proj_host'],
+            "NAME_DB" => $_POST['proj_banco'],
+            "PASS_DB" => $_POST['proj_pass'],
+            "USER_DB" => $_POST['proj_user'],
+            
+            #Project
+            "PROJECT_NAME" => $_POST['proj_name'],
+            "PROJECT_FOTO" => explode('../', $save)[1],
+        );
+
+        $final = "";
+        foreach($setConfig as $key => $value){
+            $final .= $key .'='. $value . PHP_EOL;
+        }
+
+        safefilerewrite('../config.ini', $final);
+
+    }else{
+        print_r($upload->error);
     }
-    safefilerewrite('../config.ini', $final);
+}
 
-;}
-
-function safefilerewrite($fileName, $dataToSave)
-{
+function safefilerewrite($fileName, $dataToSave){
     if ($fp = fopen($fileName, 'w')) {
         $startTime = microtime(TRUE);
         do {
@@ -40,7 +57,7 @@ function safefilerewrite($fileName, $dataToSave)
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
