@@ -1,4 +1,5 @@
 <?php
+
 class Links {
 
     public const js_Chart          = 'components/chart.js/Chart.min.js';

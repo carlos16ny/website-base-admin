@@ -5,10 +5,12 @@ var gulp = require('gulp'),
 
 
 gulp.task('connect-sync', function() {
-  connect.server({}, function (){
+  connect.server({
+    port: 3002
+  }, function (){
     browserSync({
         proxy: '127.0.0.1:8000' 
-        });
+      });
     });
     gulp.watch('**/*.php').on('change', function () {
       browserSync.reload();

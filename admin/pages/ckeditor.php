@@ -4,6 +4,7 @@ $map = array('titulo' => 'CKEditor', 'secao' => 'CK');
 include_once 'header.php';
 if(isset($_POST['editor1'])){
     $inputCK = $_POST['editor1'];
+    var_dump($_FILES);
 }
 ?>
 
