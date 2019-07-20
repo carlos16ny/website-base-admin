@@ -73,12 +73,12 @@ Agora que a instalação está pronta, vamos ver um pouco do que eu possuo:
 
 ### **Bibliotecas JavaScript já carregadas :**
 1. [Chart.js](https://www.chartjs.org) | [Exemplo](admin/pages/chart.md)
-2. [FullCalendar](http://fullcalendar.io/) | [Exemplo](admin/pages/callendar.md)
+2. [FullCalendar](http://fullcalendar.io/) | [Exemplo](admin/pages/calendar.md)
 3. [Select2.js](https://select2.org) | [Exemplo](admin/pages/inputs.md)
 4. [TimePicker](https://jdewit.github.io/bootstrap-timepicker/) | [Exemplo](admin/pages/inputs.md)
 5. [DatePicker](https://bootstrap-datepicker.readthedocs.io/en/latest/) | [Exemplo](admin/pages/inputs.md)
 6. [DateRangePicker](http://www.daterangepicker.com) | [Exemplo](admin/pages/inputs.md)
 7. [ColorPicker](https://github.com/farbelous/bootstrap-colorpicker) | [Exemplo](admin/pages/inputs.md)
-8.  [iCheck](http://icheck.fronteed.com) | [Exemplo](admin/pages/inputs.md)
-9.  [CKEditor](https://ckeditor.com) | [Exemplo](admins/pages/ckeditor.md)
+8. [iCheck](http://icheck.fronteed.com) | [Exemplo](admin/pages/inputs.md)
+9. [CKEditor](https://ckeditor.com) | [Exemplo](admins/pages/ckeditor.md)
 10. [CKFinder](https://ckeditor.com/ckfinder/) | [Exemplo](admin/pages/ckfinder.md)

@@ -48,9 +48,9 @@
                         </a>
                     </li>
                     <li class="">
-                        <a href="callendar.php">
+                        <a href="calendar.php">
                             <i class="fa fa-circle-o"></i>
-                            Callendar
+                            Calendar
                         </a>
                     </li>
                     <li class="treeview">
