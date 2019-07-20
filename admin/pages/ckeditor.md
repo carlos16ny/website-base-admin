@@ -21,10 +21,14 @@ include_once 'footer.php';
 2. Inicie corretamento o documento com a ```<section class="content">``` entre o header e footer
    
 ```html
+{{ Header }}
+
 <section class="content">
     <div class="row">
     </div>
 </section>
+
+{{Footer}}
 ```
 
 3. Importe o script do CKEditor para a página logo após a inclusão do footer
