@@ -38,12 +38,12 @@
                     <ul class="nav navbar-nav">
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="assets/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                                <img src="holder.js/128x128" class="user-image" alt="User Image">
                                 <span class="hidden-xs">Alexander Pierce</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="user-header">
-                                    <img src="assets/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                    <img src="holder.js/128x128" class="img-circle" alt="User Image">
                                     <p>
                                         Alexander Pierce - Web Developer
                                         <small>Member since Nov. 2012</small>
@@ -54,7 +54,7 @@
                                         <a href="#" class="btn btn-default btn-flat">Perfil</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Sair</a>
+                                        <a href="assets/php/logout.php" class="btn btn-default btn-flat">Sair</a>
                                     </div>
                                 </li>
                             </ul>

@@ -8,7 +8,7 @@ class Database{
     public  $conn;
 
     public function __construct(){
-        $config = parse_ini_file('../../../config.ini');
+        $config = parse_ini_file('config.ini');
         $this->host     = $config['HOST_DB'];
         $this->user     = $config['USER_DB'];
         $this->db_name  = $config['NAME_DB'];

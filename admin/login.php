@@ -1,5 +1,11 @@
 <?php
+
+
+include_once 'assets/php/classes/messageClass.php';
+include_once 'assets/php/classes/database.php';
+include_once 'assets/php/classes/loginClass.php';
 include_once 'assets/php/controller/loginController.php';
+
 $foto = parse_ini_file('config.ini')['PROJECT_FOTO'];
 $name = parse_ini_file('config.ini')['PROJECT_NAME'];
 ?>
@@ -28,6 +34,13 @@ $name = parse_ini_file('config.ini')['PROJECT_NAME'];
 </head>
 
 <body class="hold-transition login-page">
+<?php if(isset($error)) { ?>
+    <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4><i class="icon fa fa-ban"></i> Erro!</h4>
+        <?=$error?>
+    </div>
+<?php } ?>
 
 <style>
 .img-circle{
@@ -60,7 +73,7 @@ $name = parse_ini_file('config.ini')['PROJECT_NAME'];
 
                     </div>
                     <div class="col-xs-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">Entrar</button>
+                        <button type="submit" name="login" class="btn btn-primary btn-block btn-flat">Entrar</button>
                     </div>
                 </div>
             </form>
