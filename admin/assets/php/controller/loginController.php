@@ -1,32 +1,57 @@
 <?php
-session_start();
 
-$login = new Login();
+namespace Controller;
 
-if (isset($_POST['login'])) {
+/**
+ * Controle de Login, deve ser instaciado, e seu método postLogin chamado
+ * Não há necessidade de Instaciar O Model, apenas o controller
+ */
+class LoginController
+{
+    private $login;
 
-    $dados = array(
-        ":email" => $_POST['email'],
-        ":senha" => sha1($_POST['senha'])
-    );
-
-    $email = $login->checkEmail($dados);
-
-    if ($email) {
-
-        $user = $login->validateLogin($dados);
-
-        if ($user) {
-            $_SESSION['login_id']       = $user->id;
-            $_SESSION['login_email']    = $user->email;
-        } else {
-            $error = Message::loginError1;
-        }
-    } else {
-        $error = Message::loginError2;
+    public function __construct()
+    {
+        $this->login = new \Classes\Login;
     }
-}
 
-if (isset($_SESSION['login_id']) && isset($_SESSION['login_email'])) {
-    header('Location: index.php');
+    public function postLogin()
+    {
+
+        $dados = array(
+            ":email" => $_POST['email'],
+            ":senha" => sha1($_POST['senha'])
+        );
+
+        $email = $this->login->checkEmail($dados);
+
+        if ($email) {
+
+            $user = $this->login->validateLogin($dados);
+
+            if ($user) {
+                $this->setInitialSession($user);
+                $this->checkSession();
+            } else {
+                $error = \Classes\Message::loginError1;
+            }
+        } else {
+            $error = \Classes\Message::loginError2;
+        }
+    
+        return $error;
+    }
+
+    public function setInitialSession($user)
+    {
+        $_SESSION['login_id']       = $user->id;
+        $_SESSION['login_email']    = $user->email;
+    }
+
+    public function checkSession()
+    {
+        if (isset($_SESSION['login_id']) && isset($_SESSION['login_email'])) {
+            header('Location: index.php');
+        }
+    }
 }

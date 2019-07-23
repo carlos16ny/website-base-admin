@@ -6,4 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Classes\\Database' => $baseDir . '/admin/assets/php/classes/database.php',
+    'Classes\\Links' => $baseDir . '/admin/assets/php/classes/linksClass.php',
+    'Classes\\Login' => $baseDir . '/admin/assets/php/classes/loginClass.php',
+    'Classes\\Message' => $baseDir . '/admin/assets/php/classes/messageClass.php',
+    'Controller\\LoginController' => $baseDir . '/admin/assets/php/controller/loginController.php',
 );

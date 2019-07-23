@@ -47,7 +47,7 @@ PORT_DB={{ porta bd }}
 >
 > * #### _Existe um modelo de script genérico para sites já na pasta_
 > 
-> ![Modelo Banco de Dados](assets/uploads/modelo-bd.png)
+> ![Modelo Banco de Dados](assets/uploads/md/modelo-bd.png)
 >   
 > * ##### O modelo é suficiente para a maioria dos sites que são feitos pela Visão, mas pode gerar muitas células NULL.
 

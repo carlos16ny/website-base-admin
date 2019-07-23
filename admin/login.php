@@ -1,14 +1,15 @@
 <?php
+require_once '../vendor/autoload.php';
 
-
-include_once 'assets/php/classes/messageClass.php';
-include_once 'assets/php/classes/database.php';
-include_once 'assets/php/classes/loginClass.php';
-include_once 'assets/php/controller/loginController.php';
-
+$Login = new \Controller\LoginController;
+if(isset($_POST['login'])){
+    $result = $Login->postLogin();
+}
 $foto = parse_ini_file('config.ini')['PROJECT_FOTO'];
 $name = parse_ini_file('config.ini')['PROJECT_NAME'];
+
 ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -34,11 +35,11 @@ $name = parse_ini_file('config.ini')['PROJECT_NAME'];
 </head>
 
 <body class="hold-transition login-page">
-<?php if(isset($error)) { ?>
+<?php if(isset($result)) { ?>
     <div class="alert alert-danger alert-dismissible">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
         <h4><i class="icon fa fa-ban"></i> Erro!</h4>
-        <?=$error?>
+        <?=$result?>
     </div>
 <?php } ?>
 

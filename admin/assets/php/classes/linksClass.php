@@ -1,6 +1,15 @@
 <?php
+namespace Classes;
 
-class Links {
+/**
+ * Classe para a padronização de includes de arquivos JS e CSS
+ * constante de retorno tendo como base a pasta admin/ as ROOT
+ * @package Classes
+ * @example @return Links::js_Chart
+ * @return String
+ */
+
+ class Links {
 
     public const js_Chart          = 'components/chart.js/Chart.min.js';
     public const js_Calendar       = 'components/fullcalendar/dist/fullcalendar.min.js';

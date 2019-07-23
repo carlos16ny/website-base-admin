@@ -6,40 +6,31 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit61c8c648576ccfa9772136c0a2000985
 {
-    public static $files = array (
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
-        'S' => 
+        'C' => 
         array (
-            'Symfony\\Polyfill\\Ctype\\' => 23,
-        ),
-        'D' => 
-        array (
-            'Dotenv\\' => 7,
+            'Controller\\' => 11,
+            'Classes\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Polyfill\\Ctype\\' => 
+        'Controller\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+            0 => __DIR__ . '/../..' . '/admin/assets/php/controller',
         ),
-        'Dotenv\\' => 
+        'Classes\\' => 
         array (
-            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+            0 => __DIR__ . '/../..' . '/admin/assets/php/classes',
         ),
     );
 
-    public static $prefixesPsr0 = array (
-        'P' => 
-        array (
-            'PhpOption\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/phpoption/phpoption/src',
-            ),
-        ),
+    public static $classMap = array (
+        'Classes\\Database' => __DIR__ . '/../..' . '/admin/assets/php/classes/database.php',
+        'Classes\\Links' => __DIR__ . '/../..' . '/admin/assets/php/classes/linksClass.php',
+        'Classes\\Login' => __DIR__ . '/../..' . '/admin/assets/php/classes/loginClass.php',
+        'Classes\\Message' => __DIR__ . '/../..' . '/admin/assets/php/classes/messageClass.php',
+        'Controller\\LoginController' => __DIR__ . '/../..' . '/admin/assets/php/controller/loginController.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -47,7 +38,7 @@ class ComposerStaticInit61c8c648576ccfa9772136c0a2000985
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit61c8c648576ccfa9772136c0a2000985::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit61c8c648576ccfa9772136c0a2000985::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit61c8c648576ccfa9772136c0a2000985::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit61c8c648576ccfa9772136c0a2000985::$classMap;
 
         }, null, ClassLoader::class);
     }

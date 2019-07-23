@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
-    'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
+    'Controller\\' => array($baseDir . '/admin/assets/php/controller'),
+    'Classes\\' => array($baseDir . '/admin/assets/php/classes'),
 );

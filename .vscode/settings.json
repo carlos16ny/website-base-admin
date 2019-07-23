@@ -1,0 +1,16 @@
+{
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Fira Code",
+    "editor.tabSize": 2,
+    "files.autoSave": "onWindowChange",
+    "[php]": {
+        "editor.wordWrapColumn": 80,
+        "editor.tabSize": 4,
+    },
+    "breadcrumbs.enabled": true,
+    "liveServer.settings.host": "127.0.0.1",
+    "liveServer.settings.port": 3000,
+    "files.associations": {
+        "stdio.h": "c"
+    }
+}

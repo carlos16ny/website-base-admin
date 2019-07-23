@@ -5,9 +5,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('connect-sync', function() {
-  connect.server({
-    port: 3002
-  }, function (){
+  connect.server({}, function (){
     browserSync({
         proxy: '127.0.0.1:8000' 
       });

@@ -1,0 +1,17 @@
+{
+    "name": "website-base-admin",
+    "license": "'MIT'",
+    "authors": [
+        {
+            "name": "Carlos Abreu",
+            "email": "carloshpa.mg4@me.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Classes\\" : "admin/assets/php/classes/",
+            "Controller\\" : "admin/assets/php/controller/"
+        }
+    }
+}
