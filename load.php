@@ -2,7 +2,7 @@
 
 if( ! defined( 'ENV' ) ) {
     /** define o tipo de ambiente [ DEV => display all erros || PROD => display non errors ] */
-    define( ENV, 'DEV' );
+    define( ENV, 'PROD' );
 }
 
 if ( ! defined( 'ABSPATH' ) ) {
