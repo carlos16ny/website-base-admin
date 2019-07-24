@@ -20,11 +20,19 @@ class Database
 
     public function __construct()
     {
-        $this->host     = HOST_DB;
-        $this->user     = USER_DB;
-        $this->db_name  = NAME_DB;
-        $this->pass     = PASS_DB;
-        $this->port     = PORT_DB;
+        if(ENV == 'DEV'){
+            $this->host     = HOST_DB;
+            $this->user     = USER_DB;
+            $this->db_name  = NAME_DB;
+            $this->pass     = PASS_DB;
+            $this->port     = PORT_DB;
+        }else{
+            $this->host     = HOST_DB_PROD;
+            $this->user     = USER_DB_PROD;
+            $this->db_name  = NAME_DB_PROD;
+            $this->pass     = PASS_DB_PROD;
+            $this->port     = PORT_DB_PROD;
+        }
     }
 
     /**
