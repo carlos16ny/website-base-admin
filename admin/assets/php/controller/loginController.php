@@ -23,6 +23,7 @@ class LoginController
             ":senha" => sha1($_POST['senha'])
         );
 
+
         $email = $this->login->checkEmail($dados);
 
         if ($email) {

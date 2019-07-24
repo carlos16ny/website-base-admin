@@ -1,9 +1,8 @@
 <?php
-include_once '../assets/php/classes/linksClass.php';
 $map = array('titulo' => 'Calendar', 'secao' => 'FullCalendar.js');
 include_once 'header.php';
 ?>
-<link rel="stylesheet" href="../<?= (Links::css_Calendar) ?>">
+<link rel="stylesheet" href="../<?= (Classes\Links::css_Calendar) ?>">
 
 <section class="content">
   <div class="row">
@@ -20,9 +19,9 @@ include_once 'header.php';
 <?php
 include_once 'footer.php';
 ?>
-<script src="../<?= (Links::js_Moment) ?>"></script>
-<script src="../<?= (Links::js_Calendar) ?>"></script>
-<script src="../<?= (Links::js_CalendarPt) ?>"></script>
+<script src="../<?= (Classes\Links::js_Moment) ?>"></script>
+<script src="../<?= (Classes\Links::js_Calendar) ?>"></script>
+<script src="../<?= (Classes\Links::js_CalendarPt) ?>"></script>
 <script>
   $(function() {
     var date = new Date()
@@ -85,7 +84,7 @@ include_once 'footer.php';
           end: new Date(y, m, 29),
           url: 'http://google.com/',
           backgroundColor: '#3c8dbc', //Primary (light-blue)
-          borderColor: '#3c8dbc' //Primary (light-blue)
+          borderColor: '#3c8dbc' //Primary (light-blue)ßßß
         }
       ]
     });

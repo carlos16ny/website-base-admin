@@ -1,5 +1,6 @@
 <?php
 namespace Classes;
+use PDO;
 
 /**
  * Class Login, realiza conexão com o banco de dados no seu construtor 

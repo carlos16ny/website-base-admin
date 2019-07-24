@@ -1,5 +1,4 @@
 <?php
-include_once '../assets/php/classes/linksClass.php';
 $map = array('titulo' => 'CKFinder', 'secao' => 'CK');
 include_once 'header.php';
 ?>
@@ -11,7 +10,7 @@ include_once 'header.php';
                 <div class="box-header">
                     <div id="ckfinder-widget"></div>
                 </div>
-            </div>    
+            </div>
         </div>
     </div>
 </section>
@@ -19,16 +18,15 @@ include_once 'header.php';
 <?php
 include_once 'footer.php';
 ?>
-<script src="../<?=(Links::js_CKFinder)?>"></script>
+<script src="../<?= (Classes\Links::js_CKFinder) ?>"></script>
 <script>
-ClassicEditor
-         .create( document.querySelector( '#ckfinder-widget' ), {
-             ckfinder: {
-                 uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
-             },
-             toolbar: [ 'ckfinder', 'imageUpload', '|', 'heading', '|', 'bold', 'italic', '|', 'undo', 'redo' ]
-         } )
-         .catch( function( error ) {
-             console.error( error );
-         } );
+    ClassicEditor.create(document.querySelector('#ckfinder-widget'), {
+            ckfinder: {
+                uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
+            },
+            toolbar: ['ckfinder', 'imageUpload', '|', 'heading', '|', 'bold', 'italic', '|', 'undo', 'redo']
+        })
+        .catch(function(error) {
+            console.error(error);
+        });
 </script>

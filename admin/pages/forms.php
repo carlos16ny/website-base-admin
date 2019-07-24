@@ -1,14 +1,13 @@
 <?php
 $map = array('titulo' => 'Inputs', 'secao' => 'Formulários');
 include_once 'header.php';
-require_once '../assets/php/classes/linksClass.php';
 ?>
-<link rel="stylesheet" href="../<?= (Links::css_DatePicker) ?>">
-<link rel="stylesheet" href="../<?= (Links::css_DateRange) ?>">
-<link rel="stylesheet" href="../<?= (Links::css_iCheck) ?>">
-<link rel="stylesheet" href="../<?= (Links::css_Select2) ?>">
-<link rel="stylesheet" href="../<?= (Links::css_TimePicker) ?>">
-<link rel="stylesheet" href="../<?= (Links::css_ColorPicker) ?>">
+<link rel="stylesheet" href="../<?= (Classes\Links::css_DatePicker) ?>">
+<link rel="stylesheet" href="../<?= (Classes\Links::css_DateRange) ?>">
+<link rel="stylesheet" href="../<?= (Classes\Links::css_iCheck) ?>">
+<link rel="stylesheet" href="../<?= (Classes\Links::css_Select2) ?>">
+<link rel="stylesheet" href="../<?= (Classes\Links::css_TimePicker) ?>">
+<link rel="stylesheet" href="../<?= (Classes\Links::css_ColorPicker) ?>">
 <!-- Main content -->
 <section class="content">
   <div class="box box-default">
@@ -317,13 +316,13 @@ require_once '../assets/php/classes/linksClass.php';
 
 </section>
 <?php include_once 'footer.php'; ?>
-<script src="../<?=(Links::js_ColorPicker)?>"></script>
-<script src="../<?=(Links::js_Moment)?>"></script>
-<script src="../<?=(Links::js_Select2)?>"></script>
-<script src="../<?=(Links::js_DatePicker)?>"></script>
-<script src="../<?=(Links::js_DateRange)?>"></script>
-<script src="../<?=(Links::js_TimePicker)?>"></script>
-<script src="../<?=(Links::js_iCheck)?>"></script>
+<script src="../<?=(Classes\Links::js_ColorPicker)?>"></script>
+<script src="../<?=(Classes\Links::js_Moment)?>"></script>
+<script src="../<?=(Classes\Links::js_Select2)?>"></script>
+<script src="../<?=(Classes\Links::js_DatePicker)?>"></script>
+<script src="../<?=(Classes\Links::js_DateRange)?>"></script>
+<script src="../<?=(Classes\Links::js_TimePicker)?>"></script>
+<script src="../<?=(Classes\Links::js_iCheck)?>"></script>
 
 <script>
   $(function() {

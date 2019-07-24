@@ -1,7 +1,6 @@
 <?php 
 $map = array('titulo' => 'Chart.JS', 'secao' => 'Exemplos');
 include_once 'header.php';
-require_once '../assets/php/classes/linksClass.php';
 ?>
 <section class="content">
   <div class="row">
@@ -83,7 +82,7 @@ require_once '../assets/php/classes/linksClass.php';
 
 
 <?php include_once 'footer.php' ?>
-<script src="../<?=(Links::js_Chart)?>"></script>
+<script src="../<?=(Classes\Links::js_Chart)?>"></script>
 <script>
   $(function () {
     /* ChartJS

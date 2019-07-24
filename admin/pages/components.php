@@ -1,5 +1,4 @@
 <?php
-include_once '../assets/php/classes/linksClass.php';
 $map = array('titulo' => 'Componentes', 'secao' => 'Exemplos');
 include_once 'header.php';
 ?>
@@ -539,4 +538,4 @@ include_once 'header.php';
 <?php
 include_once 'footer.php';
 ?>
-<script src="../<?= (Links::js_Holder) ?>"></script>
+<script src="../<?= (Classes\Links::js_Holder) ?>"></script>

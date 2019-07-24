@@ -1,10 +1,8 @@
 <?php
-include_once '../assets/php/classes/linksClass.php';
 $map = array('titulo' => 'CKEditor', 'secao' => 'CK');
 include_once 'header.php';
 if(isset($_POST['editor1'])){
     $inputCK = $_POST['editor1'];
-    var_dump($_FILES);
 }
 ?>
 
@@ -44,7 +42,7 @@ if(isset($_POST['editor1'])){
 <?php
 include_once 'footer.php';
 ?>
-<script src="../<?= (Links::js_CKEditor) ?>"></script>
+<script src="../<?= (Classes\Links::js_CKEditor) ?>"></script>
 <script>
     $(function (){
         CKEDITOR.replace('editor1');

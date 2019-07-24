@@ -1,12 +1,14 @@
 <?php
+session_start();
 require_once '../vendor/autoload.php';
+require_once '../load.php';
 
 $Login = new \Controller\LoginController;
 if(isset($_POST['login'])){
     $result = $Login->postLogin();
 }
-$foto = parse_ini_file('config.ini')['PROJECT_FOTO'];
-$name = parse_ini_file('config.ini')['PROJECT_NAME'];
+$foto = PROJECT_FOTO;
+$name = PROJECT_NAME;
 
 ?>
 
@@ -62,11 +64,11 @@ $name = parse_ini_file('config.ini')['PROJECT_NAME'];
 
             <form action="login.php" method="post">
                 <div class="form-group has-feedback">
-                    <input type="email" name="email" class="form-control" placeholder="Email">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="password" name="senha" class="form-control" placeholder="Senha">
+                    <input type="password" name="senha" class="form-control" placeholder="Senha" required>
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
                 <div class="row">
